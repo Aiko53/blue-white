@@ -1,6 +1,6 @@
 ---
 hero:
-  title: dream-react-ui
+  title: blue-white
   desc: dumi-ui-site-template site example
   actions:
     - text: Getting Started
@@ -18,4 +18,4 @@ features:
 footer: Open-source MIT Licensed | Copyright © 2020<br />Powered by [dumi](https://d.umijs.org)
 ---
 
-## Hello ti-lin-react!
+## Hello blue-white!

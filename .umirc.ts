@@ -5,7 +5,7 @@ import { defineConfig } from 'dumi';
 const repo = 'ti-lin-react';  // 项目名
 
 export default defineConfig({
-  title: 'ti-lin-react', // 网站标题名
+  title: 'blue-white', // 网站标题名
   // 网站标题旁边图片
   favicon:
     'https://user-images.githubusercontent.com/9554297/83762004-a0761b00-a6a9-11ea-83b4-9c8ff721d4b8.png',
