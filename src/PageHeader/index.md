@@ -1,10 +1,10 @@
 ---
 title: PageHeader页头
 nav:
-  title: Navigation 导航
+  title: 通用
   path: /component
 group:
-  path: /navigation
+  path: /component
 ---
 
 # PageHeader 页头

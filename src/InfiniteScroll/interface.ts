@@ -13,7 +13,7 @@ export interface InfiniteScrollProps {
    * @description 触发加载的距离阈值，单位为px
    * @default 0
    */
-  infiniteScrollDistance?: number | any;
+  infiniteScrollDistance?: number;
   /**
    * @description 是否立即执行加载方法，以防初始状态下内容无法撑满容器。
    * @default true

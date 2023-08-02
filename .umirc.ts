@@ -1,8 +1,11 @@
+/**
+ * 文档的配置文件,也可以在 .umi/dumi/config.json中配置
+ */
 import { defineConfig } from 'dumi';
+const repo = 'ti-lin-react';  // 项目名
 
 export default defineConfig({
-  // 网站标题名
-  title: 'react-element',
+  title: 'ti-lin-react', // 网站标题名
   // 网站标题旁边图片
   favicon:
     'https://user-images.githubusercontent.com/9554297/83762004-a0761b00-a6a9-11ea-83b4-9c8ff721d4b8.png',
@@ -12,6 +15,9 @@ export default defineConfig({
   outputPath: 'docs-dist',
   // 配置导航条模式 // 默认纵向，
   mode: 'site',
+  base: process.env.NODE_ENV === 'production' ? `/${repo}/` : '/',
+  publicPath: process.env.NODE_ENV === 'production' ? `/${repo}/` : '/',
+
   apiParser: {
     // 自定义属性过滤配置，也可以是一个函数，用法参考：https://github.com/styleguidist/react-docgen-typescript/#propfilter
     propFilter: {
@@ -41,13 +47,17 @@ export default defineConfig({
       children: [
         {
           title: 'CSDN',
-          path: 'https://blog.csdn.net/hhhhhhaa1?spm=1000.2115.3001.5343',
+          path: 'https://blog.csdn.net/m0_71157847?spm=1000.2115.3001.5343',
+        },
+        {
+          title: '掘金',
+          path: 'https://juejin.cn/user/1568342086263021',
         },
       ],
     },
     {
       title: 'GitHub',
-      path: 'https://github.com/yanyuehai/react-element',
+      path: 'https://github.com/swown6/ti-lin-react',
     },
   ],
 });

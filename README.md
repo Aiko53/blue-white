@@ -1,59 +1,33 @@
-# 安装
-`npm i blue-white`
+# ti-lin-react
 
-## 使用
+## Getting Started
 
-## 引入 Element
-我们可以按需引入，单独导入某一个组件即可使用。
-```js
-import React from 'react';
-import { Button } from 'blue-white';
+Install dependencies,
 
-export default function ButtonDemo1() {
-  return (
-    <div style={{ display: 'flex', justifyContent: 'space-around' }}>
-      <Button type="primary" >基础按钮</Button>
-      <Button type="success">成功按钮</Button>
-      <Button type="danger">危险按钮</Button>
-      <Button type="warning">警告按钮</Button>
-      <Button type="info">信息按钮</Button>
-    </div>
-  );
-}
+```bash
+$ npm i
 ```
-完整导入组件列表。
-```js
-import {
-  Avatar,
-  Backtop,
-  Breadcrumb,
-  Button,
-  Card,
-  Carousel,
-  CarouselItem,
-  CheckboxAll,
-  CheckboxGroup,
-  Collapse,
-  Divider,
-  Icon,
-  InfiniteScroll,
-  Input,
-  InputNumber,
-  Col,
-  Row,
-  Link,
-  Loading,
-  MessageBox,
-  Notification,
-  PageHeader,
-  Pagination,
-  Popover,
-  Progress,
-  Radio,
-  RadioGroupButton,
-  Switch,
-  Table,
-  Tabs,
-  TabPane
-} from "blue-white"
+
+Start the dev server,
+
+```bash
+$ npm start
+```
+
+Build documentation,
+
+```bash
+$ npm run docs:build
+```
+
+Run test,
+
+```bash
+$ npm test
+```
+
+Build library via `father`,
+
+```bash
+$ npm run build
 ```

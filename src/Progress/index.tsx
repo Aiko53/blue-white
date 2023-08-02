@@ -3,7 +3,19 @@ import { ProgressProps, NativeProgressProps } from './interface';
 import css from './Progress.module.less';
 const Progress: FC<ProgressProps & NativeProgressProps> = memo((props) => {
   let { percent, strokeColor, status, showInfo } = props;
+  console.log(props);
+  console.log(css);
 
+  // const newPercent = useMemo(()=>{
+  //     if(percent){
+  //       percent =  percent + "%"
+  //    }
+  //    if(status && status === 'fail'){
+  //     return <CloseOutlined />
+  // }
+  //     return percent
+
+  // },[percent])
   const statusStyle = useMemo(() => {
     let size = {
       width: '0',
@@ -45,20 +57,23 @@ const Progress: FC<ProgressProps & NativeProgressProps> = memo((props) => {
   console.log(status === 'active' ? css['line_bg_show'] : css['line_bg']);
 
   return (
-    <div className={css['line']}>
-      <div className={css.line_outer}>
-        <div className={css.line_inner}>
-          <div
-            className={status === 'active' ? css['line_bg_show'] : css['line_bg']}
-            style={statusStyle}
-          ></div>
+    <div className={css['progress']}>
+      <div className={css['line']}>
+        <div className={css.line_outer}>
+          <div className={css.line_inner}>
+            <div
+              className={status === 'active' ? css['line_bg_show'] : css['line_bg']}
+              style={statusStyle}
+            ></div>
+          </div>
+        </div>
+
+        <div className={css.line_info}>
+          <span className={css.line_info_status}>{statusStyle.num}</span>
         </div>
       </div>
-
-      <div className={css.line_info}>
-        <span className={css.line_info_status}>{statusStyle.num}</span>
-      </div>
     </div>
+
   );
 });
 

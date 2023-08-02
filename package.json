@@ -1,17 +1,18 @@
 {
-  "private": false,
-  "name": "blue-white",
-  "version": "1.1.0",
+  "name": "ti-react-uuxi",
+  "type": "module",
+  "version": "1.2.0",
   "scripts": {
     "start": "dumi dev",
-    "dumiBuild": "dumi build",
+    "docs:build": "dumi build",
     "docs:deploy": "gh-pages -d docs-dist",
     "build": "father build",
     "deploy": "npm run docs:build && npm run docs:deploy",
     "prettier": "prettier --write \"**/*.{js,jsx,tsx,ts,less,md,json}\"",
     "test": "umi-test",
     "test:coverage": "umi-test --coverage",
-    "prepublishOnly": "npm run build"
+    "prepublishOnly": "npm run build",
+    "x": "rollup -c rollup.config.js"
   },
   "files": [
     "dist"
@@ -30,7 +31,20 @@
     ]
   },
   "dependencies": {
-    "react": "^18.0.0"
+    "@rollup/plugin-commonjs": "^25.0.3",
+    "@rollup/plugin-json": "^6.0.0",
+    "@rollup/plugin-node-resolve": "^15.1.0",
+    "@rollup/plugin-typescript": "^11.1.2",
+    "react": "^18.0.0",
+    "rollup": "^3.27.0",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-clear": "^2.0.7",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-less": "^1.1.3",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-postcss": "^4.0.2",
+    "rollup-plugin-terser": "^7.0.2",
+    "rollup-plugin-typescript2": "^0.35.0"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^5.15.1",
