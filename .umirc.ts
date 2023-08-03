@@ -2,7 +2,7 @@
  * 文档的配置文件,也可以在 .umi/dumi/config.json中配置
  */
 import { defineConfig } from 'dumi';
-const repo = 'ti-lin-react';  // 项目名
+const repo = 'blue-white';  // 项目名
 
 export default defineConfig({
   title: 'blue-white', // 网站标题名
