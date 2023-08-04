@@ -53,7 +53,7 @@ export default defineConfig({
     },
     {
       title: 'GitHub',
-      path: 'https://github.com/swown6/ti-lin-react',
+      path: 'https://github.com/Aiko53/blue-white',
     },
   ],
 });
