@@ -11,7 +11,7 @@
     "test": "umi-test",
     "test:coverage": "umi-test --coverage",
     "prepublishOnly": "npm run build",
-    "x": "rollup -c rollup.config.js"
+    "ru": "rollup -c rollup.config.js"
   },
   "files": [
     "dist"

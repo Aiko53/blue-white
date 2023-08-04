@@ -2,7 +2,7 @@
  * 文档的配置文件,也可以在 .umi/dumi/config.json中配置
  */
 import { defineConfig } from 'dumi';
-const repo = 'blue-white';  // 项目名
+const repo = 'blue-white'; // 项目名
 
 export default defineConfig({
   title: 'blue-white', // 网站标题名
@@ -47,11 +47,7 @@ export default defineConfig({
       children: [
         {
           title: 'CSDN',
-          path: 'https://blog.csdn.net/m0_71157847?spm=1000.2115.3001.5343',
-        },
-        {
-          title: '掘金',
-          path: 'https://juejin.cn/user/1568342086263021',
+          path: 'https://blog.csdn.net/2201_75634698?spm=1000.2115.3001.5343',
         },
       ],
     },
